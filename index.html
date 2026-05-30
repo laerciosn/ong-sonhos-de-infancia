@@ -508,6 +508,10 @@
       gap: 3rem; margin-bottom: 3rem;
     }
     @media (max-width: 700px) { .footer-grid { grid-template-columns: 1fr; gap: 2rem; } }
+    @media (max-width: 560px) {
+      .footer-bottom { flex-direction: column; align-items: center; text-align: center; gap: .35rem; }
+      .footer-copy { display: flex; flex-direction: column; align-items: center; gap: .1rem; }
+    }
 
     .footer-logo img {
       height: 70px; width: auto; margin-bottom: 1rem;
@@ -544,6 +548,7 @@
       font-size: .8rem; color: rgba(255,255,255,.65); font-weight: 600;
     }
     .footer-bottom a { color: white; text-decoration: underline; text-underline-offset: 3px; }
+    .footer-copy { display: flex; gap: .3rem; flex-wrap: wrap; }
 
     /* ══════════════════════════════
        ORGANIC DECORATIVE SHAPES
@@ -1106,7 +1111,10 @@
     </div>
 
     <div class="footer-bottom">
-      <span>© 2026 ONG Sonhos de Infância. Desenvolvido por <a href="https://laerciosandes.com.br/" target="_blank" rel="noopener noreferrer">Laércio Sandes</a></span>
+      <div class="footer-copy">
+        <span>© 2026 ONG Sonhos de Infância.</span>
+        <span>Desenvolvido por <a href="https://laerciosandes.com.br/" target="_blank" rel="noopener noreferrer" style="white-space:nowrap">Laércio Sandes</a></span>
+      </div>
       <span>Suzano, SP — Brasil 🇧🇷</span>
     </div>
   </div>
